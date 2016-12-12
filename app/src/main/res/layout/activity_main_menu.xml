@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.nexteer.nzx5jd.tictactoe.MainMenu"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="46sp"
+        android:text="@string/title"
+        android:id="@+id/title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="@string/playas"
+            android:gravity="center_horizontal" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/playerX"
+            android:id="@+id/player">
+
+            <RadioButton
+                android:text="X"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/playerX" />
+
+            <RadioButton
+                android:text="O"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:id="@+id/playerO" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="@string/difficulty"
+            android:gravity="center_horizontal" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/diffsmart"
+            android:id="@+id/difficulty">
+
+            <RadioButton
+                android:text="@string/genius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diffgenius"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/smart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diffsmart"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="@string/derp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diffderp"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <Button
+            android:text="@string/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startGame"
+            android:id="@+id/start" />
+    </RelativeLayout>
+
+
+</LinearLayout>
