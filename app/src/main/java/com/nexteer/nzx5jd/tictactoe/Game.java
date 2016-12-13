@@ -50,7 +50,7 @@ public class Game extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         Intent intent = getIntent();
-        char player = intent.getCharExtra("EXTRA_PLAYER", 'X');
+        player = intent.getCharExtra("EXTRA_PLAYER", 'X');
         difficulty = intent.getIntExtra("EXTRA_DIFFICULTY", 1);
 
         if (player == 'X') {
